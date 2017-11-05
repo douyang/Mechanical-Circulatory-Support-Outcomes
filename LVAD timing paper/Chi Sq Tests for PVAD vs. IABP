@@ -1,0 +1,66 @@
+###### Early comparison
+
+# Shock
+x <- matrix(c(5733, 18981, 32, 156), ncol = 2)
+chisq.test(x)
+
+# AMI
+x <- matrix(c(1928, 18055, 28, 85), ncol = 2)
+chisq.test(x)
+
+# PCI
+x <- matrix(c(95, 1476, 47, 187), ncol = 2)
+chisq.test(x)
+
+
+##### Late comparison
+
+# Shock
+x <- matrix(c(359, 1063, 14, 41), ncol = 2)
+chisq.test(x)
+
+# AMI
+x <- matrix(c(231, 863, 14, 51), ncol = 2)
+chisq.test(x)
+
+# PCI
+x <- matrix(c(47, 182, 10, 28), ncol = 2)
+chisq.test(x)
+
+
+
+
+########## PVAD early vs. late
+
+#Shock
+
+x <- matrix(c(32, 156, 14, 41), ncol = 2)
+chisq.test(x)
+
+# AMI -Shock
+
+x <- matrix(c(28, 85, 14, 51), ncol = 2)
+chisq.test(x)
+
+# PCI -shock -AMI
+x <- matrix(c(47, 182, 10, 28), ncol = 2)
+chisq.test(x)
+
+
+
+
+########## PVAD early vs. late
+#### Include Day 2 - 7
+
+x <- matrix(c(32, 156, 33, 127), ncol = 2)
+chisq.test(x)
+
+# AMI -Shock
+
+x <- matrix(c(28, 85, 49, 177), ncol = 2)
+chisq.test(x)
+
+# PCI -shock -AMI
+x <- matrix(c(47, 182, 46, 136), ncol = 2)
+chisq.test(x)
+
